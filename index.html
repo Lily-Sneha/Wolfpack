@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/input.css" rel="stylesheet">
+  <!-- <link href="output.css" rel="stylesheet"> -->
+  <link href="output.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+  <div class="w-full text-black bg-white drop-shadow-md font-family-class">
+    <div x-data="{ open: false }"
+      class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+      <div class="flex flex-row items-center justify-between">
+
+        <a href="index.html" class="font-sans text-black font-extrabold text-3xl ">BIG <br>
+          <p class="font-sans text-black font-normal text-base">Bureau of Indian Giving</p>
+        </a>
+
+
+        <button aria-label="hamberger" id="hamberger-btn"
+          class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 heading-text-color">
+            <path x-show="!open" fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+            <path x-show="open" fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <nav :class="{'flex': open, 'hidden': !open}"
+        class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+        <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="index.html">Home</a>
+
+          <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="./pif.html">PIF</a>
+
+        <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="./about.html">About Us</a>
+
+        <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50     md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="Contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </div>
+  <!-- ******* -->
+
+  <!-- hero section -->
+  <!-- <main>
+    <div class="flex  relative py-20 xl:px-28 bg-gradient-to-r from-red-300">
+
+
+      <div class="lg:mb-0 ">
+        <img src="./image/big-img-4-removebg-preview.png" class="" alt="" />
+
+      </div>
+
+
+      <div class=" lg:px-36 pt-4   text-gray-800 text-center lg:text-left my-5 absolute ">
+        <div class="container mx-auto  xl:px-28">
+          <div class=" flex justify-end p-4 ">
+            <div class="lg:mt-0 h-1/5 w-3/4">
+              <p class=" font-medium text-justify  lg:text-base pb-4 ">
+                The nonprofit fundraising sector in India has remained somewhat mythical for decades. The
+                sector does not offer many possibilities to charities to effectively pursue any collective effort
+                around learning, sharing, thinking etc. Sustained and meaningful conversations between the
+                charities, having a common goal to create a more equal world is rare.
+              </p>
+              <p class=" font-medium text-justify  lg:text-base pb-4 ">Scientific enquiry in fundraising discipline is
+                hardly practiced for financial constraints and is
+                mostly seen as uneconomic. Fundraisers are not produced as part of any academic process
+                or churn; hiring qualified fundraisers remains a long-standing challenge. Most charities lack
+                the capacity or/and resources to tap the funding market. Finding reliable and relevant data
+                on fundraising is a near impossible task.</p>
+
+              <p class=" font-medium text-justify  lg:text-base pb-4 "> BIG exists to solve nonprofit fundraising
+                problems
+                and intends to emerge as a valuable
+                anchoring institution, dedicated to improving the nonprofit fundraising eco-system. We are
+                an agency for collecting and distributing news and information, coordinating work, or
+                performing specified services on charitable giving and charitable fundraisers. As a nonprofit
+                fundraising specialist for research, development and applied fundraising practices, BIG
+                works with charities to improve their fundraising operations. We take short and middle term
+                projects with NGOs and academic institutions to solve fundraising related problems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main> -->
+
+  <main>
+    <div class=" ">
+
+
+      <div class="lg:mb-0 flex justify-center bg-gradient-to-r from-red-300">
+        <img src="./image/big-img-4-removebg-preview.png" class=" pt-10" alt="" />
+
+      </div>
+
+
+      <div class=" lg:px-36 pt-4   text-gray-800 text-center lg:text-left my-5  ">
+        <div class="container mx-auto  xl:px-28">
+          <div class=" flex justify-center p-4 ">
+            <div class="lg:mt-0 h-1/5 w-5/6">
+              <p class=" font-medium text-justify  lg:text-base pb-4 ">
+                The nonprofit fundraising sector in India has remained somewhat mythical for decades. The
+                sector does not offer many possibilities to charities to effectively pursue any collective effort
+                around learning, sharing, thinking etc. Sustained and meaningful conversations between the
+                charities, having a common goal to create a more equal world is rare.
+              </p>
+              <p class=" font-medium text-justify  lg:text-base pb-4 ">Scientific enquiry in fundraising discipline is
+                hardly practiced for financial constraints and is
+                mostly seen as uneconomic. Fundraisers are not produced as part of any academic process
+                or churn; hiring qualified fundraisers remains a long-standing challenge. Most charities lack
+                the capacity or/and resources to tap the funding market. Finding reliable and relevant data
+                on fundraising is a near impossible task.</p>
+
+              <p class=" font-medium text-justify  lg:text-base pb-4 "> BIG exists to solve nonprofit fundraising
+                problems
+                and intends to emerge as a valuable
+                anchoring institution, dedicated to improving the nonprofit fundraising eco-system. We are
+                an agency for collecting and distributing news and information, coordinating work, or
+                performing specified services on charitable giving and charitable fundraisers. As a nonprofit
+                fundraising specialist for research, development and applied fundraising practices, BIG
+                works with charities to improve their fundraising operations. We take short and middle term
+                projects with NGOs and academic institutions to solve fundraising related problems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- hero section end -->
+
+  <!-- footer -->
+  <div>
+    <footer class="bg-white shadow-xl" aria-labelledby="footer-heading">
+      <hr class="bg-blue-900 border-2">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      <div class="mx-auto max-w-7xl px-8 pb-8 sm:pt-8">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="grid lg:grid-cols-2 gap-8 xl:col-span-2">
+            <div class="pt-4 lg:pt-0">
+              <h1 class="text-2xl font-bold text-black capitalize lg:text-4xl  p-2">BIG
+              </h1>
+              <p class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl p-2">
+                Bureau of Indian Giving </p>
+            </div>
+          </div>
+          <div class="mt-10 xl:mt-0">
+            <p class="mt-2 text-sm leading-6 text-black">
+              9999999999 | 9999999999</p>
+            <p class="mt-2 text-sm leading-6 text-black">
+              <a href="mailto:tyciafoundation@gmail.com?subject=supporting tycia">big@gmail.com</a>
+            </p>
+            <p class="mt-2 text-sm leading-6 text-black">N-33, 2nd Floor, Greenpark Extension,New
+              Delhi-110016</p>
+
+          </div>
+        </div>
+
+        <div class="mt-8 border-t border-white/10 pt-2 sm:mt-8 md:flex md:items-center md:justify-between">
+          <div class="flex space-x-6 md:order-2">
+
+          </div>
+          <p class="mt-8 text-xs leading-5 text-black md:order-1 md:mt-0">&copy; 2023 Your Company, Inc.
+            All rights
+            reserved.</p>
+
+        </div>
+
+        <p class="mt-8 text-xs leading-5  md:order-1 md:mt-0 text-black">
+          Built with ❤️ by
+   
+          <a href="https://aikyamfellows.org/" class="text-black hover:text-red-500 hover:underline" target="_blank">
+            Lily </a>
+          using
+          <a href="https://github.com/t4glabs/tyciafoundation" class="text-black hover:text-red-500 hover:underline"
+            target="_blank">Github Pages</a>
+          Tailwind
+        </p>
+
+
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

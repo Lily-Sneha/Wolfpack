@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/input.css" rel="stylesheet">
+    <!-- <link href="output.css" rel="stylesheet"> -->
+    <link href="output.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <div class="w-full text-black bg-white drop-shadow-md font-family-class">
+        <div x-data="{ open: false }"
+            class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="flex flex-row items-center justify-between">
+
+                <a href="index.html" class="font-sans text-black font-extrabold text-3xl ">BIG <br>
+                    <p class="font-sans text-black font-normal text-base">Bureau of Indian Giving</p>
+                </a>
+
+
+                <button aria-label="hamberger" id="hamberger-btn"
+                    class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 heading-text-color">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="index.html">Home</a>
+      
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="./pif.html">PIF</a>
+      
+
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="./about.html">About Us</a>
+
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50     md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+    <!-- ******* -->
+<section>
+    <div class="lg:px-6 px-8 lg:pt-12 mt-5">
+        <div class="container mx-auto xl:px-36 ">
+            <h1 class="font-bold text-xl">
+                P.I.F. Committee Pvt. Ltd.
+            </h1>
+            <p class="text-sm py-2">
+                Public Interest Fundraising Committee
+            </p>
+            <p class="text-justify  lg:text-base pb-4 my-3 text-gray-800">BLorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti obcaecati quod eligendi explicabo
+                tempore voluptate suscipit autem quae dolores excepturi alias minus at fugit esse, totam tempora.
+                Veritatis, numquam aut.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti obcaecati quod eligendi explicabo
+                tempore voluptate suscipit autem quae dolores excepturi alias minus at fugit esse, totam tempora.
+                Veritatis, numquam aut.
+            </p>
+        </div>
+    </div>
+    
+</section>
+<!-- why pif  -->
+<section>
+    <div class="lg:px-6 px-8  lg:text-left lg:pt-12 mx-auto lg:mt-5">
+        <div class="container mx-auto xl:px-36 ">
+            <h1 class=" font-bold text-xl py-2">
+                WHY PIF Committee
+            </h1>
+            <p class="  text-justify  lg:text-base pb-4 text-gray-800">The nonprofit (development) fundraising industry in India has remained somewhat mythical
+                for decades. The sector does not offer many possibilities for charities to effectively pursue
+                any collective effort around advancement of fundraising via learning, sharing, and thinking
+                etc. Sustained and meaningful conversations between the charities, having a common goal
+                to create a more equal world is rare. Even though, unlike the for-profit world, non-profits are
+                way less competitive, and a feeling of kindness and respect are usually mutual.
+                This absence of any collaborative effort to advance non-profit fundraising has led to endemic
+                systemic weakness. National non-profit fundraising benchmark data are difficult to obtain
+                and mostly unavailable; fundraising ethical standards are mostly left to the mercy of
+                perspectives, ideology, or beliefs; compensation standards are inconsistent; duplicity of
+                effort; absence of a any significant national platform for skill sharing; non emergence of any
+                significant sector advocacy group or associations, and a general lack of progress in quality
+                of fundraising and innovations etc. Such systemic malice has created an alarming level of
+                trust deficit for fundraising in many organizations.
+                Scientific enquiry in fundraising discipline is hardly practiced for financial constraints and is
+                mostly seen as uneconomic. Fundraisers are not produced as part of any academic process
+                or churn; hiring qualified fundraisers remains a long-standing challenge. Most charities lack
+                the capacity or/and resources to tap the funding market. Finding reliable and relevant data
+                on fundraising is a near impossible task.
+                PIF Committee exist to solve nonprofit fundraising problems and intends to emerge as a
+                valuable anchoring institution, dedicated to improving the nonprofit fundraising eco-system.
+                We are an agency for collecting and distributing news and information, coordinating work, or
+                performing specified services on charitable giving and charitable fundraisers. As a nonprofit
+                fundraising specialist for research, development and applied fundraising practices, PIF
+                Committee works with charities and other Development Fundraising organizations (e.g.
+                private Universities) to improve their fundraising operations and the overall fundraising
+                ecosystem.
+            </p>
+
+        </div>
+        <hr class="bg-blue-900 border-1 px-6 lg:mx-48">
+    </div>
+</section>
+<!-- who is pif -->
+<section>
+
+    <div class="lg:px-6 px-8  lg:text-left lg:pt-12 mx-auto lg:mt-5">
+        <div class="container mx-auto xl:px-36 ">
+            <h1 class=" font-bold text-xl py-2">
+                WHO is PIF Committee
+            </h1>
+            <p class="  text-justify  lg:text-base pb-4 text-gray-800">PIF Committee has been created to address critical issues or solve long-standing problems
+                that are hindering fundraising work for public interest (any action or policies that are for
+                public good). We possibly exist in the most diverse and dramatic fundraising dancefloor in
+                the world. Solving some of these fundraising problems may lead to significant human
+                progress, driven by the charities.
+                The PIF Committee possess over one hundred years of collective nonprofit fundraising
+                experience in Asia, Western Europe and North America. With priceless education from
+                uncountable days and nights of small and significant failures, we take pride in our own
+                integrity standards and wear an unwavering resilient attitude to solve systemic problems in
+                fundraising. 
+            </p>
+
+        </div>
+        <hr class="bg-blue-900 border-1 px-6 lg:mx-48">
+    </div>
+</section>
+<!-- mission vision goal -->
+<section>
+    <div class="grid lg:grid-cols-3 gap-4 lg:px-6 px-8 lg:mx-36 lg:my-24 my-12 xl:px-36 bg-gradient-to-t from-violet-200">
+        <!-- Vision -->
+        <div>
+            <h1 class="font-bold text-xl">Vision</h1>
+            <p>Charities in India will not lose sleep over fundraising problems.</p>
+            <div>
+                <img src="./image/big-img-1-removebg-preview.png" alt="">
+            </div>
+        </div>
+
+        <!-- Mission -->
+        <div>
+            <h1 class="font-bold text-xl">Mission</h1>
+            <p>Become the fundraising engine for fifty charities in India in the next 5 years.
+                Provide access to reliable and valuable fundraising data to the sector.
+                Produce fifty high-value fundraisers for the sector in the next 5 years.</p>
+            <div>
+                <img src="./image/big-img-2-removebg-preview.png" alt="">
+            </div>
+        </div>
+
+        <!-- New Point (e.g., Goals) -->
+        <div>
+            <h1 class="font-bold text-xl">Goals</h1>
+            <p>Achieve sustainable growth by building long-term partnerships with key stakeholders in the sector.</p>
+            <div>
+                <img src="./image/big-img-3-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+    <hr class="bg-blue-900 border-1 px-6 lg:mx-48">
+</section>
+
+<!-- Patner section -->
+<section>
+    <div class="grid lg:grid-cols-3 gap-4 lg:px-6 px-8 lg:mx-36 lg:my-24 my-12 xl:px-36">
+        <!-- Partner 1 -->
+        <div class="text-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1562783912-21ad31ee2a83?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Partner 1 Logo" class="mx-auto mb-4 h-28 w-28 object-contain">
+            </div>
+            <h2 class="font-bold text-lg">Partner 1</h2>
+        </div>
+
+        <!-- Partner 2 -->
+        <div class="text-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1562783912-21ad31ee2a83?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Partner 2 Logo" class="mx-auto mb-4 h-28 w-28 object-contain">
+            </div>
+            <h2 class="font-bold text-lg">Partner 2</h2>
+        </div>
+
+        <!-- Partner 3 -->
+        <div class="text-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1562783912-21ad31ee2a83?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Partner 3 Logo" class="mx-auto mb-4 h-28 w-28 object-contain">
+            </div>
+            <h2 class="font-bold text-lg">Partner 3</h2>
+        </div>
+    </div>
+    <hr class="bg-blue-900 border-1 px-6 lg:mx-48">
+</section>
+
+
+
+<section>
+    <div class="lg:px-6 px-8 container mx-auto xl:px-36 lg:pt-12 lg:mt-5">
+        <h1 class="font-bold text-xl py-1">HOW does PIF Committee work</h1>
+
+        <!-- Fundraising Ecosystem Projects -->
+        <h2 class="font-semibold text-lg mt-2 mb-2">Fundraising Ecosystem Projects (regular sectoral programs):</h2>
+        <ul class="px-6 list-disc">
+            <li>Periodic Nonprofit fundraising landscaping</li>
+            <li>Training and certification of fundraising professionals (in association with globally acclaimed institutions)</li>
+            <li>Data consolidation and analytics</li>
+            <li>Developing open sourcing tools and other fundraising materials</li>
+        </ul>
+
+        <!-- Development Collaboratives for Fundraising Advancement Projects -->
+        <h2 class="font-semibold text-lg mt-2 mb-2">Development Collaboratives for Fundraising Advancement Projects (regular sectoral programs):</h2>
+        <ul class="px-6 list-disc">
+            <li>National nonprofit fundraising benchmarking</li>
+            <li>Biennial India Fundraising Festival</li>
+            <li>Fundraising transparency and credibility enhancement</li>
+            <li>Work towards an association of non-profits</li>
+        </ul>
+
+        <!-- Fundraising Growth Projects -->
+        <h2 class="font-semibold text-lg mt-2 mb-2">Fundraising Growth Projects:</h2>
+        <ul class="px-6 list-disc">
+            <li>Fundraising recruitment</li>
+            <li>Classical fundraising- High net worth fundraising; Corporate fundraising; Trusts
+                and foundation fundraising; Digital fundraising; Retail (individual/household)
+                fundraising, Cause related marketing; Merchandise; Middle donor fundraising;
+                Cult fundraising
+            </li>
+            <li>Applied fundraising- developing and testing fundraising products; output-oriented
+                fundraising training; Fortifying fundraising operation; capacity building of
+                fundraising unit or individuals
+            </li>
+            <li>Strategic- Fundraising strategy refresh and/or development; Fund development
+                and financing strategy; Assessment of fundraising operations; Donor
+                engagement strategy; triggering fundraising growth; cultural alignment to
+                influence productivity and operational challenges; developing fundraising
+                operation as an engine for sustainability.
+            </li>
+        </ul>
+
+
+        <h2 class="font-semibold text-lg mt-2 mb-2">Fundraising Growth Projects:</h2>
+        <ul class="px-6 list-disc">
+            <li>Projects and Clients</li>
+            <li>ASAR- research paper on state of fundraising with rights based and environmental
+                non-profits in India
+            </li>
+            <li>Breakthrough- donor retention growth by improving systems, processes, and
+                capacities
+            </li>
+            <li>Centre for Catalyzing Change (C3)- fundraising strategy refresh for growth and a
+                system change approach
+            </li>
+            <li>CMS- to include a 2- coordinated fundraising operational systems and process
+                development for multiple organizations sitting under 1 parent organization
+            </li>
+            <li>Freedom Fund- developing a self-assessment online tool for fundraising
+                improvement
+            </li>
+            <li>Head Held High Foundation- networking and long-term strategy for fundraising
+            </li>
+            <li>RNB Global University- advisor to the Founding family and Development team.
+            </li>
+            
+        </ul>
+    </div>
+    <hr class="bg-blue-900 border-1 px-6 lg:mx-48">
+</section>
+
+<section>
+
+</section>
+
+
+
+    <!-- footer -->
+    <div>
+        <footer class="bg-white shadow-xl" aria-labelledby="footer-heading">
+            <hr class="bg-blue-900 border-2">
+            <h2 id="footer-heading" class="sr-only">Footer</h2>
+            <div class="mx-auto max-w-7xl px-8 pb-8 sm:pt-8">
+                <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                    <div class="grid lg:grid-cols-2 gap-8 xl:col-span-2">
+                        <div class="pt-4 lg:pt-0">
+                            <h1 class="text-2xl font-bold text-black capitalize lg:text-4xl  p-2">BIG
+                            </h1>
+                            <p class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl p-2">
+                                Bureau of Indian Giving </p>
+                        </div>
+                    </div>
+                    <div class="mt-10 xl:mt-0">
+                        <p class="mt-2 text-sm leading-6 text-black">
+                            9999999999 | 98711 92983</p>
+                        <p class="mt-2 text-sm leading-6 text-black">
+                            <a href="mailto:tyciafoundation@gmail.com?subject=supporting tycia">big@gmail.com</a>
+                        </p>
+                        <p class="mt-2 text-sm leading-6 text-black">N-33, 2nd Floor, Greenpark Extension,New
+                            Delhi-110016</p>
+
+                    </div>
+                </div>
+
+                <div class="mt-8 border-t border-white/10 pt-2 sm:mt-8 md:flex md:items-center md:justify-between">
+                    <div class="flex space-x-6 md:order-2">
+
+                    </div>
+                    <p class="mt-8 text-xs leading-5 text-black md:order-1 md:mt-0">&copy; 2023 Your Company, Inc.
+                        All rights
+                        reserved.</p>
+
+                </div>
+
+                <p class="mt-8 text-xs leading-5  md:order-1 md:mt-0 text-black">
+                    Built with ❤️ by
+                    <!-- <a href="https://oasishq.org/" class="text-black hover:text-red-500 hover:underline"
+                        target="_blank">Lily</a>
+                    partner -->
+                    <a href="https://aikyamfellows.org/" class="text-black hover:text-red-500 hover:underline"
+                        target="_blank">
+                        Lily </a>
+                    using
+                    <a href="https://github.com/t4glabs/tyciafoundation"
+                        class="text-black hover:text-red-500 hover:underline" target="_blank">Github Pages</a>
+                    Tailwind
+                </p>
+
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

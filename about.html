@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/input.css" rel="stylesheet">
+    <!-- <link href="output.css" rel="stylesheet"> -->
+    <link href="output.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <div class="w-full text-black bg-white drop-shadow-md font-family-class">
+        <div x-data="{ open: false }"
+            class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="flex flex-row items-center justify-between">
+
+                <a href="index.html" class="font-sans text-black font-extrabold text-3xl ">BIG <br>
+                    <p class="font-sans text-black font-normal text-base">Bureau of Indian Giving</p>
+                </a>
+
+
+                <button aria-label="hamberger" id="hamberger-btn"
+                    class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 heading-text-color">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+                <!-- <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="index.html">Home</a> -->
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="about.html">About Us</a>
+
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50     md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="Contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+    <!-- ******* -->
+
+    <!-- hero section -->
+    <main>
+        <div class="lg:mb-0 py-4 flex justify-center bg-gradient-to-br from-purple-400 ">
+            <img src="./image/big-img-6-removebg-preview.png" class="" alt="hero-img" />
+        </div>
+
+
+        <div class="lg:px-6 px-8 lg:py-12  text-gray-800 text-center lg:text-left my-5">
+            <div class="container mx-auto xl:px-36">
+                <div class="  flex justify-center">
+                    <div class="lg:mt-0">
+
+                        <p class=" font-medium text-justify  lg:text-base pb-4 ">
+                            Roughly USD 15 billion is spent in India annually (2023) on social sector. Close to 1.9 lac
+                            (2023) Indian NGOs endeavor to raise a part of this fund from various sources. These
+                            numbers are growing steadily irrespective of many world volatilities. Irrespective of this
+                            historical growth trend, the fundraising ecosystem has not evolved much in India. Issues
+                            with
+                            finding qualified fundraisers, in addition to several other challenges around the capacity
+                            of
+                            the NGOs to tap this growing social sector funding market have remained endemic problems
+                            for several decades now.
+                        </p>
+                        <p class=" font-medium text-justify  lg:text-base pb-4 ">BIG is in a good space to solve
+                            innumerable highly complex and interesting fundraising
+                            problems. We possibly exist in the most diverse and dramatic fundraising dancefloor in the
+                            world. Solving some of these fundraising problems may lead to significant human progress,
+                            driven by the charities.</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <!-- hero section end -->
+
+    <!-- who is big -->
+    <section>
+        <div class="lg:px-6 px-8 text-black text-center lg:text-left lg:my-3">
+            <div class="container mx-auto xl:px-36 ">
+                <h1 class=" font-bold text-xl">
+                    Who is BIG
+                </h1>
+                <p class=" font-medium text-justify  lg:text-base pb-4 ">BIG has over one hundred years of collective
+                    nonprofit fundraising experience in- frontline
+                    sales, strategy development, commanding large fundraising operations, dozens of high
+                    value acquisitions, and priceless education from uncountable days and nights of failures and
+                    distress. We take pride in our own integrity standards and possess and an unwavering
+                    resilient attitude to solve problems. Please look at our upcoming consulting partner page.
+                </p>
+
+            </div>
+            <hr class="bg-blue-900 border-1 px-6 lg:mx-48">
+        </div>
+    </section>
+
+    <!-- BIG practices -->
+    <section>
+        <div class="grid lg:grid-cols-2 gap-4 lg:px-6 px-8 lg:mx-36 lg:my-24 my-12 xl:px-36 bg-gradient-to-t from-violet-200">
+            <div>
+                <h1 class="font-bold text-xl">Vision</h1>
+                <p>Charities in India will not lose sleep over fundraising problems.</p>
+                <div class="">
+                    <img src="./image/big-img-1-removebg-preview.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <h1 class="font-bold text-xl">Mission</h1>
+                <p>Become the fundraising engine for fifty charities in India in the next 5 years.
+                    Provide access to reliable and valuable fundraising data to the sector.
+                    Produce fifty high value fundraisers for the sector in the next 5 years.</p>
+                <div>
+                    <img src="./image/big-img-2-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+        <hr class="bg-blue-900 border-1 px-6 lg:mx-48">
+    </section>
+    <!--  -->
+
+
+    <section>
+        <div class="lg:px-6 px-8 container mx-auto lg:my-24 my-12 xl:px-36">
+            <h1 class="font-bold text-xl my-3">Services BIG offer</h1>
+            <p class=" text-justify  lg:text-base pb-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti obcaecati quod eligendi explicabo
+                tempore voluptate suscipit autem quae dolores excepturi alias minus at fugit esse, totam tempora.
+                Veritatis, numquam aut.
+            </p>
+            
+            <ul class="px-6">
+                <li class="list-disc">Fundraising recruitment</li>
+                <li class="list-disc">Mentoring and coaching of fundraising professionals.</li>
+                <li class="list-disc">Shared fundraising leadership services</li>
+                <li class="list-disc">Classical fundraising- High net worth fundraising; Corporate fundraising; Trusts
+                    and
+                    foundation fundraising; Digital fundraising; Retail (individual/household) fundraising,
+                    Cause related marketing; Merchandise; Middle donor fundraising; Cult fundraising</li>
+                <li class="list-disc">Applied fundraising- developing and testing fundraising products; output-oriented
+                    fundraising training; Fortifying fundraising operation; capacity building of fundraising
+                    unit or individuals</li>
+                <li class="list-disc">Strategic- Fundraising strategy refresh and/or development; Fund development and
+                    financing strategy; Assessment of fundraising operations; Donor engagement
+                    strategy; triggering fundraising growth; cultural alignment to influence productivity
+                    and operational challenges; developing fundraising operation as an engine for
+                    sustainability.</li>
+            </ul>
+        </div>
+        <hr class="bg-blue-900 border-1 px-6 lg:mx-48">
+    </section>
+    <!--  -->
+
+    <section>
+        <div class="lg:px-6 px-8 container mx-auto  lg:my-24 my-12 xl:px-36">
+            <h1 class="font-bold text-xl my-3">BIG Practices</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta pariatur eligendi labore quam aspernatur
+                fugiat nam animi distinctio facilis! Minus ipsa corporis eligendi commodi. Possimus, autem? Architecto
+                magnam deserunt debitis?
+            </p>
+            <ul class="px-6">
+                <li class="list-disc">National nonprofit fundraising benchmarking</li>
+                <li class="list-disc">Nonprofit fundraising landscaping</li>
+                <li class="list-disc">Training and certification of fundraising professionals</li>
+                <li class="list-disc">India Fundraising Festival</li>
+            </ul>
+        </div>
+        <hr class="bg-blue-900 border-1 px-6 lg:mx-48">
+    </section>
+
+    <!--  -->
+    <section>
+        <div class="lg:px-6 px-8 container mx-auto my-24 xl:px-36">
+            <h1 class="font-bold text-xl my-3">BIG Projects-</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempora culpa velit placeat optio
+                voluptatem saepe, exercitationem aliquam numquam laborum corrupti nobis labore magni excepturi eaque hic
+                dicta commodi illum?</p>
+            <ul class="px-6">
+                <li class="list-disc">ASAR- to include a 2-line description of the project</li>
+                <li class="list-disc">Breakthrough- to include a 2-line description of the project</li>
+                <li class="list-disc">Centre for Catalyzing Change (C3)- to include a 2-line description of the project
+                </li>
+                <li class="list-disc">CMS- to include a 2-line description of the project</li>
+                <li class="list-disc">Freedom Fund- to include a 2-line description of the project</li>
+                <li class="list-disc">Floyd Inc.- to include a 2-line description of the project</li>
+                <li class="list-disc">o Floyd Inc.- to include a 2-line description of the project</li>
+                <li class="list-disc">RNB Global University- to include a 2-line description of the project</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <div>
+        <footer class="bg-white shadow-xl" aria-labelledby="footer-heading">
+            <hr class="bg-blue-900 border-2">
+            <h2 id="footer-heading" class="sr-only"></h2>
+            <div class="mx-auto max-w-7xl px-8 pb-8 sm:pt-8">
+                <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                    <div class="grid lg:grid-cols-2 gap-8 xl:col-span-2">
+                        <div class="pt-4 lg:pt-0">
+                            <h1 class="text-2xl font-bold text-black capitalize lg:text-4xl  p-2">BIG
+                            </h1>
+                            <p class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl p-2">
+                                Bureau of Indian Giving </p>
+                        </div>
+                    </div>
+                    <div class="mt-10 xl:mt-0">
+                        <p class="mt-2 text-sm leading-6 text-black">
+                            9999999990 | 9999999999</p>
+                        <p class="mt-2 text-sm leading-6 text-black">
+                            <a href="mailto:tyciafoundation@gmail.com?subject=supporting tycia">big@gmail.com</a>
+                        </p>
+                        <p class="mt-2 text-sm leading-6 text-black">N-33, 2nd Floor, Ganesha Apt,Raipur
+                            490002, Chhattisgarh</p>
+
+                    </div>
+                </div>
+
+                <div class="mt-8 border-t border-white/10 pt-2 sm:mt-8 md:flex md:items-center md:justify-between">
+                    <div class="flex space-x-6 md:order-2">
+
+                        <!-- <a href="https://www.instagram.com/tyciafoundation/" class="text-gray-500 hover:text-white">
+                      <span class="sr-only">Instagram</span>
+                      <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path fill-rule="evenodd"
+                              d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                              clip-rule="evenodd" />
+                      </svg>
+                        </a> -->
+
+
+                    </div>
+                    <p class="mt-8 text-xs leading-5 text-black md:order-1 md:mt-0">&copy; 2023 Your Company, Inc.
+                        All rights
+                        reserved.</p>
+
+                </div>
+
+                <p class="mt-8 text-xs leading-5  md:order-1 md:mt-0 text-black">
+                    Built with ❤️ by
+                    <!-- <a href="https://oasishq.org/" class="text-black hover:text-white hover:underline"
+                        target="_blank">Lily</a> -->
+
+                    <a href="" class="text-black hover:text-red-500 hover:underline" target="_blank">
+                        Lily </a>
+                    using
+                    <a href="https://github.com/t4glabs/tyciafoundation"
+                        class="text-black hover:text-red-500 hover:underline" target="_blank">Github Pages</a>
+                    Tailwind
+                </p>
+
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
