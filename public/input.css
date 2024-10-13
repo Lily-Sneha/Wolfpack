@@ -1,7 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.bg-hero {
-    background-color: RGB(238, 182, 72);
-}
