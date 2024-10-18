@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/src/input.css" rel="stylesheet">
-    <!-- <link href="output.css" rel="stylesheet"> -->
     <link href="output.css" rel="stylesheet">
 
 </head>
@@ -18,16 +17,15 @@
     <div class="w-full text-black bg-white drop-shadow-md font-family-class">
         <div x-data="{ open: false }"
             class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+
             <div class="flex flex-row items-center justify-between">
 
-                <a href="index.html" class="font-sans text-black font-extrabold text-3xl ">BIG <br>
-                    <p class="font-sans text-black font-normal text-base">Bureau of Indian Giving</p>
-                </a>
+                <a href="./index.html"><img src="./image/logo/logo-1.png" alt="logo" class="h-full w-20"></a>
 
 
-                <button aria-label="hamberger" id="hamberger-btn"
-                    class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 heading-text-color">
+                <button aria-label="hamberger-btn" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+                    @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-red-600">
                         <path x-show="!open" fill-rule="evenodd"
                             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
                             clip-rule="evenodd"></path>
@@ -77,26 +75,31 @@
 
             <div class="container mx-auto xl:px-20">
 
-                <div class=" font-serif grid lg:grid-cols-2 gap-4 flex items-center justify-center mb-2">
-                    <div>
-                        <h1
-                            class="heading-font-family max-w-sm mb-4 text-3xl font-bold  tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
+                <div class=" font-serif   gap-4 flex items-center  items-center justify-center mb-2">
+                    <!-- <div> -->
+                    <!-- <h1
+                            class="heading-font-family  mb-4 text-2xl font-bold  tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
                             WHAT
-                        </h1>
-                        <h1
-                            class="heading-font-family max-w-sm mb-4 text-3xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
+                        </h1> -->
+                    <!-- <h1
+                        class="heading-font-family  mb-4 text-2xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
 
-                             DO 
-                        </h1>
-                        <h1
-                            class="heading-font-family max-w-sm mb-4 text-3xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
+                        WHAT DO WE DO ?
+                    </h1> -->
+                    <!-- <h1
+                            class="heading-font-family  mb-4 text-2xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
 
-                            WE DO ?</h1>
-                    </div>
+                            WE DO ?</h1> -->
+                    <!-- </div> -->
 
                     <div class="lg:mt-0">
+                        <h1
+                            class="heading-font-family  mb-4 text-2xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
 
-                        <p class="paragraphs-font max-w-2xl font-medium text-base p-2">
+                            WHAT DO WE DO ?
+                        </h1>
+
+                        <p class="paragraphs-font text-lg  p-2">
                             XYZ exist to solve nonprofit fundraising problems and intends to emerge as a
                             valuable anchoring institution, dedicated to improving the nonprofit fundraising eco-
                             system. We are an agency for collecting and distributing news and information,
@@ -117,23 +120,23 @@
     <!-- projects and clients -->
     <section>
 
-        <div class="font-serif px-6 py-12 back-color text-gray-800 bg-amber-300 lg:text-left">
+        <div class="font-serif px-6 py-12 back-color text-gray-800  lg:text-left">
 
             <div class="container mx-auto xl:px-20">
 
                 <div class="grid lg:grid-cols-2 gap-4 flex items-center justify-center mb-2">
                     <div>
                         <h1
-                            class="font-serif max-w-sm mb-4 text-3xl font-bold  tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color ">
+                            class="font-serif max-w-sm mb-4 text-2xl font-bold  tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color ">
                             PROJECTS
                         </h1>
                         <h1
-                            class="font-serif max-w-sm mb-4 text-3xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
+                            class="font-serif max-w-sm mb-4 text-2xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
 
                             AND
                         </h1>
                         <h1
-                            class="font-serif max-w-sm mb-4 text-3xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
+                            class="font-serif max-w-sm mb-4 text-2xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
 
                             CLIENTS</h1>
                     </div>
@@ -141,36 +144,44 @@
                     <div class="lg:mt-0">
 
                         <ul>
-                            <li class="list-disc font-serif font-serif p-2 p-2">ASAR- research paper on state of
+                            <li class="list-disc font-serif text-lg pb-1">ASAR- research paper on state of
                                 fundraising with rights based and
                                 environmental non-profits in India</li>
-                            <li class="list-disc font-serif p-2">Breakthrough- donor retention growth by improving
+                            <li class="list-disc font-serif text-lg pb-1">Breakthrough- donor retention growth by
+                                improving
                                 systems, processes,
                                 and
                                 capacities</li>
-                            <li class="list-disc font-serif p-2">Centre for Catalyzing Change (C3)- fundraising strategy
+                            <li class="list-disc font-serif text-lg pb-1">Centre for Catalyzing Change (C3)- fundraising
+                                strategy
                                 refresh for
                                 growth
                                 and a system change approach</li>
-                            <li class="list-disc font-serif p-2">CMS- to include a 2- coordinated fundraising
+                            <li class="list-disc font-serif text-lg pb-1">CMS- to include a 2- coordinated fundraising
                                 operational systems and
                                 process development for multiple organizations sitting under 1 parent
                                 organization</li>
-                            <li class="list-disc font-serif p-2">Freedom Fund- developing a self-assessment online tool
+                            <li class="list-disc font-serif text-lg pb-1">Freedom Fund- developing a self-assessment
+                                online tool
                                 for fundraising
                                 improvement</li>
-                            <li class="list-disc font-serif p-2">Floyd Inc.- advisor to Founder for business growth,
+                            <li class="list-disc font-serif text-lg pb-1">Floyd Inc.- advisor to Founder for business
+                                growth,
                                 mentoring core
                                 team</li>
-                            <li class="list-disc font-serif p-2">Head Held High Foundation- networking and long-term
+                            <li class="list-disc font-serif text-lg pb-1">Head Held High Foundation- networking and
+                                long-term
                                 strategy for
                                 fundraising</li>
-                            <li class="list-disc font-serif p-2">RNB Global University- advisor to the Founding family
+                            <li class="list-disc font-serif text-lg pb-1">RNB Global University- advisor to the Founding
+                                family
                                 and Development
                                 team.</li>
-                            <li class="list-disc font-serif p-2">VR Foundation- create a sustainable fundraising engine
+                            <li class="list-disc font-serif text-lg pb-1">VR Foundation- create a sustainable
+                                fundraising engine
                                 in 2 years</li>
-                            <li class="list-disc font-serif p-2">Vriddha Mitra- Landscaping India fundraising</li>
+                            <li class="list-disc font-serif text-lg pb-1">Vriddha Mitra- Landscaping India fundraising
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -180,35 +191,34 @@
     <!--  -->
 
 
-    <!--  -->
 
-    <!-- services -->
-    <section class="bg-yellow-400">
+    <!-- service -->
+    <section class="bg-slate-100">
 
-        <div class="font-serif lg:px-8 lg:py-8 bg-white text-gray-800 text-center lg:text-left p-4">
-            <div class="p-6 lg:px-16">
-                <h1
-                    class="font-serif max-w-sm mb-4 text-3xl font-bold px-6  tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color ">
-                    SERVICE
-                </h1>
-            </div>
+        <div class="font-serif lg:px-8 lg:py-8 text-gray-800 text-center lg:text-left p-4">
 
             <div class="container mx-auto  lg:px-16">
-                <!-- <div class="grid lg:grid-cols-3 sm:grid-cols-3 grid-cols-1 gap-8 flex items-center justify-center"> -->
+                <div class="">
+                    <h1
+                        class="font-serif max-w-sm mb-4 text-2xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color ">
+                        SERVICE
+                    </h1>
+                </div>
 
-                <!-- <div class="back-color p-2 lg:p-6 w-full flex  items-center flex-col  gap-4 h-96"> -->
                 <h3 class="heading-font-family font-bold text-base text-color pt-2 text-start"> Fundraising
                     Ecosystem projects: </h3>
                 <div class="height: max-content flex items-end">
                     <div class=" flex items-center">
 
                         <ul>
-                            <li class="list-disc">Periodic Nonprofit fundraising landscaping</li>
-                            <li class="list-disc">Training and certification of fundraising professionals (in
+                            <li class="list-disc text-lg pb-1">Periodic Nonprofit fundraising landscaping</li>
+                            <li class="list-disc text-lg pb-1">Training and certification of fundraising professionals
+                                (in
                                 association with
                                 globally acclaimed institution)</li>
-                            <li class="list-disc">Data consolidation and analytics</li>
-                            <li class="list-disc">Developing open sourcing tools and other fundraising materials
+                            <li class="list-disc text-lg pb-1">Data consolidation and analytics</li>
+                            <li class="list-disc text-lg pb-1">Developing open sourcing tools and other fundraising
+                                materials
                             </li>
                         </ul>
                     </div>
@@ -239,6 +249,7 @@
                 <div class="height: max-content flex items-end">
                     <div class=" flex items-center ">
 
+
                         <ul>
                             <li class="list-disc">Fundraising recruitment</li>
                             <li class="list-disc">Classical fundraising- High net worth fundraising; Corporate
@@ -267,6 +278,7 @@
             </div>
         </div>
     </section>
+    <!--  -->
     <!--  -->
 
 
