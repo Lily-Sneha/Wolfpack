@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/input.css" rel="stylesheet">
+    <!-- <link href="output.css" rel="stylesheet"> -->
+    <link href="output.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <div class="w-full text-black bg-white drop-shadow-md font-family-class">
+        <div x-data="{ open: false }"
+            class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="flex flex-row items-center justify-between">
+
+                <a href="index.html" class="font-sans text-black font-extrabold text-3xl ">BIG <br>
+                    <p class="font-sans text-black font-normal text-base">Bureau of Indian Giving</p>
+                </a>
+
+
+                <button aria-label="hamberger" id="hamberger-btn"
+                    class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 heading-text-color">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="index.html">Home</a>
+
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="./pif.html">PIF</a>
+
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="./aboutUs.html">About Us</a>
+
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50     md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+    <!-- ******* -->
+
+    <!--  -->
+
+    <section>
+
+        <div class=" font-serif px-6 py-12 bg-slate-100 text-gray-800 text-base lg:text-left">
+
+            <div class="container mx-auto xl:px-20">
+
+                <div class=" font-serif grid lg:grid-cols-2 gap-4 flex items-center justify-center mb-2">
+                    <div>
+                        <h1
+                            class="heading-font-family max-w-sm mb-4 text-3xl font-bold  tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
+                            WHAT
+                        </h1>
+                        <h1
+                            class="heading-font-family max-w-sm mb-4 text-3xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
+
+                            DO
+                        </h1>
+                        <h1
+                            class="heading-font-family max-w-sm mb-4 text-3xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
+
+                            WE DO ?</h1>
+                    </div>
+
+                    <div class="lg:mt-0">
+
+                        <p class="paragraphs-font max-w-2xl font-medium text-base p-2">
+                            XYZ exist to solve nonprofit fundraising problems and intends to emerge as a
+                            valuable anchoring institution, dedicated to improving the nonprofit fundraising eco-
+                            system. We are an agency for collecting and distributing news and information,
+                            coordinating work, or performing specified services on charitable giving and
+                            charitable fundraisers. As a nonprofit fundraising specialist for research,
+                            development and applied fundraising practices, XYZ works with charities and other
+                            Development Fundraising organizations (e.g. private Universities) to improve their
+                            fundraising operations and the overall fundraising ecosystem. </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+
+    <!-- projects and clients -->
+    <section>
+
+        <div class="font-serif px-6 py-12 back-color text-gray-800 bg-amber-300 lg:text-left">
+
+            <div class="container mx-auto xl:px-20">
+
+                <div class="grid lg:grid-cols-2 gap-4 flex items-center justify-center mb-2">
+                    <div>
+                        <h1
+                            class="font-serif max-w-sm mb-4 text-3xl font-bold  tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color ">
+                            PROJECTS
+                        </h1>
+                        <h1
+                            class="font-serif max-w-sm mb-4 text-3xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
+
+                            AND
+                        </h1>
+                        <h1
+                            class="font-serif max-w-sm mb-4 text-3xl font-bold tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color">
+
+                            CLIENTS</h1>
+                    </div>
+
+                    <div class="lg:mt-0">
+
+                        <ul>
+                            <li class="list-disc font-serif font-serif p-2 p-2">ASAR- research paper on state of
+                                fundraising with rights based and
+                                environmental non-profits in India</li>
+                            <li class="list-disc font-serif p-2">Breakthrough- donor retention growth by improving
+                                systems, processes,
+                                and
+                                capacities</li>
+                            <li class="list-disc font-serif p-2">Centre for Catalyzing Change (C3)- fundraising strategy
+                                refresh for
+                                growth
+                                and a system change approach</li>
+                            <li class="list-disc font-serif p-2">CMS- to include a 2- coordinated fundraising
+                                operational systems and
+                                process development for multiple organizations sitting under 1 parent
+                                organization</li>
+                            <li class="list-disc font-serif p-2">Freedom Fund- developing a self-assessment online tool
+                                for fundraising
+                                improvement</li>
+                            <li class="list-disc font-serif p-2">Floyd Inc.- advisor to Founder for business growth,
+                                mentoring core
+                                team</li>
+                            <li class="list-disc font-serif p-2">Head Held High Foundation- networking and long-term
+                                strategy for
+                                fundraising</li>
+                            <li class="list-disc font-serif p-2">RNB Global University- advisor to the Founding family
+                                and Development
+                                team.</li>
+                            <li class="list-disc font-serif p-2">VR Foundation- create a sustainable fundraising engine
+                                in 2 years</li>
+                            <li class="list-disc font-serif p-2">Vriddha Mitra- Landscaping India fundraising</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+
+    <!--  -->
+
+    <!-- services -->
+    <section class="bg-yellow-400">
+
+        <div class="font-serif lg:px-8 lg:py-8 bg-white text-gray-800 text-center lg:text-left p-4">
+            <div class="p-6 lg:px-16">
+                <h1
+                    class="font-serif max-w-sm mb-4 text-3xl font-bold px-6  tracking-normal leading-9  lg:text-5xl  lg:text-start text-center text-color ">
+                    SERVICE 
+                </h1>
+            </div>
+
+            <div class="container mx-auto  lg:px-16">
+                <!-- <div class="grid lg:grid-cols-3 sm:grid-cols-3 grid-cols-1 gap-8 flex items-center justify-center"> -->
+
+                <!-- <div class="back-color p-2 lg:p-6 w-full flex  items-center flex-col  gap-4 h-96"> -->
+                <h3 class="heading-font-family font-bold text-base text-color pt-2 text-start"> Fundraising
+                    Ecosystem projects: </h3>
+                <div class="height: max-content flex items-end">
+                    <div class=" flex items-center">
+
+                        <ul>
+                            <li class="list-disc">Periodic Nonprofit fundraising landscaping</li>
+                            <li class="list-disc">Training and certification of fundraising professionals (in
+                                association with
+                                globally acclaimed institution)</li>
+                            <li class="list-disc">Data consolidation and analytics</li>
+                            <li class="list-disc">Developing open sourcing tools and other fundraising materials
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+                <!-- <div class="back-color p-2 lg:p-6 w-full flex   items-center flex-col  gap-4 h-96"> -->
+                <h3 class="heading-font-family font-bold text-base  text-color pt-2 text-start">
+                    Development Collaboratives for Fundraising Advancement projects:
+                </h3>
+                <div class="height: max-content flex items-end">
+                    <div class=" flex items-center">
+                        <ul>
+                            <li class="list-disc">National nonprofit fundraising benchmarking</li>
+                            <li class="list-disc">Biennial India Fundraising Festival</li>
+                            <li class="list-disc">Fundraising transparency and credibility enhancement</li>
+                            <li class="list-disc">Work towards an association of non-profits</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+                <!-- <div class="back-color p-2 lg:p-6 w-full flex   items-center flex-col  gap-4 h-96"> -->
+
+                <h3 class="heading-font-family font-bold text-base text-color pt-2 text-start">
+                    Fundraising growth projects:
+                </h3>
+                <div class="height: max-content flex items-end">
+                    <div class=" flex items-center ">
+
+                        <ul>
+                            <li class="list-disc">Fundraising recruitment</li>
+                            <li class="list-disc">Classical fundraising- High net worth fundraising; Corporate
+                                fundraising;
+                                Trusts and foundation fundraising; Digital fundraising; Retail
+                                (individual/household) fundraising, Cause related marketing; Merchandise;
+                                Middle donor fundraising; Cult fundraising
+                            </li>
+                            <li class="list-disc">Applied fundraising- developing and testing fundraising
+                                products; output-
+                                oriented fundraising training; Fortifying fundraising operation; capacity
+                                building of fundraising unit or individuals
+                            </li>
+                            <li class="list-disc">Strategic- Fundraising strategy refresh and/or development;
+                                Fund
+                                development and financing strategy; Assessment of fundraising
+                                operations; Donor engagement strategy; triggering fundraising growth;
+                                cultural alignment to influence productivity and operational challenges;
+                                developing fundraising operation as an engine for sustainability.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+
+    <!-- footer -->
+    <div>
+        <footer class="bg-white shadow-xl font-serif" aria-labelledby="footer-heading">
+            <hr class="bg-blue-900 border-2">
+            <h2 id="footer-heading" class="sr-only">Footer</h2>
+            <div class="mx-auto max-w-7xl px-8 pb-8 sm:pt-8">
+                <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                    <div class="grid lg:grid-cols-2 gap-8 xl:col-span-2">
+                        <div class="pt-4 lg:pt-0">
+                            <h1 class="text-2xl font-bold text-black capitalize lg:text-4xl  p-2">BIG
+                            </h1>
+                            <p class="max-w-2xl mb-6 font-light text-black font-thin lg:mb-8 md:text-lg lg:text-xl p-2">
+                                Bureau of Indian Giving </p>
+                        </div>
+                    </div>
+                    <div class="mt-10 xl:mt-0">
+                        <p class="mt-2 text-sm leading-6 text-black">
+                            9999999999 | 98711 92983</p>
+                        <p class="mt-2 text-sm leading-6 text-black">
+                            <a href="mailto:tyciafoundation@gmail.com?subject=supporting tycia">big@gmail.com</a>
+                        </p>
+                        <p class="mt-2 text-sm leading-6 text-black">N-33, 2nd Floor, Greenpark Extension,New
+                            Delhi-110016</p>
+
+                    </div>
+                </div>
+
+                <div class="mt-8 border-t border-white/10 pt-2 sm:mt-8 md:flex md:items-center md:justify-between">
+                    <div class="flex space-x-6 md:order-2">
+
+                    </div>
+                    <p class="mt-8 text-xs leading-5 text-black md:order-1 md:mt-0">&copy; 2023 Your Company, Inc.
+                        All rights
+                        reserved.</p>
+
+                </div>
+
+                <p class="mt-8 text-xs leading-5  md:order-1 md:mt-0 text-black">
+                    Built with ❤️ by
+                    <!-- <a href="https://oasishq.org/" class="text-black hover:text-red-500 hover:underline"
+                        target="_blank">Lily</a>
+                    partner -->
+                    <a href="https://aikyamfellows.org/" class="text-black hover:text-red-500 hover:underline"
+                        target="_blank">
+                        Lily </a>
+                    using
+                    <a href="https://github.com/t4glabs/tyciafoundation"
+                        class="text-black hover:text-red-500 hover:underline" target="_blank">Github Pages</a>
+                    Tailwind
+                </p>
+
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

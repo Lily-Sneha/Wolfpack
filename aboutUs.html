@@ -15,7 +15,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-    <div class="w-full text-black bg-white drop-shadow-md font-family-class">
+    <div class="w-full text-black  bg-white drop-shadow-md font-family-class">
         <div x-data="{ open: false }"
             class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
             <div class="flex flex-row items-center justify-between">
@@ -40,16 +40,20 @@
             <nav :class="{'flex': open, 'hidden': !open}"
                 class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
                 <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="index.html">Home</a>
+                    href="./index.html">Home</a>
 
                 <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="./pif.html">PIF</a>
 
                 <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="about.html">About Us</a>
+                    href="#">About Us</a>
+
+
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="./career.html">Career</a>
 
                 <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50     md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="Contact.html">Contact Us</a>
+                    href="./Contact.html">Contact Us</a>
             </nav>
         </div>
     </div>
@@ -62,7 +66,7 @@
         </div>
 
 
-        <div class="lg:px-6 px-8 lg:py-12  text-gray-800 text-center lg:text-left my-5">
+        <div class="font-serif lg:px-6 px-8 lg:py-12  text-gray-800 text-center lg:text-left my-5">
             <div class="container mx-auto xl:px-36">
                 <div class="  flex justify-center">
                     <div class="lg:mt-0">
@@ -90,8 +94,8 @@
     <!-- hero section end -->
 
     <!-- who is big -->
-    <section>
-        <div class="lg:px-6 px-8 text-black text-center lg:text-left lg:my-3">
+    <!-- <section>
+        <div class="font-serif lg:px-6 px-8 text-black text-center lg:text-left lg:my-3">
             <div class="container mx-auto xl:px-36 ">
                 <h1 class=" font-bold text-xl">
                     Who is BIG
@@ -117,12 +121,12 @@
             </div>
             <hr class="bg-blue-900 border-1 px-6 lg:mx-48">
         </div>
-    </section>
+    </section> -->
 
     <!-- BIG practices -->
     <section>
         <div
-            class="grid lg:grid-cols-2 gap-4 lg:px-6 px-8 lg:mx-36 lg:my-24 my-12 xl:px-36 bg-gradient-to-t from-violet-200">
+            class=" font-serif grid lg:grid-cols-2 gap-4 lg:px-6 px-8 lg:mx-36 lg:my-24 my-12 xl:px-36 bg-gradient-to-t from-violet-200">
             <div>
                 <h1 class="font-bold text-xl">Vision</h1>
                 <p>
@@ -154,8 +158,8 @@
     <!--  -->
 
 
-    <section>
-        <div class="lg:px-6 px-8 container mx-auto lg:my-24 my-12 xl:px-36">
+    <!-- <section>
+        <div class="font-serif lg:px-6 px-8 container mx-auto lg:my-24 my-12 xl:px-36">
             <h1 class="font-bold text-xl my-3">Services BIG offer</h1>
             <p class=" text-justify  lg:text-base pb-4">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam molestiae voluptates, culpa
@@ -221,10 +225,10 @@
             </ul>
         </div>
         <hr class="bg-blue-900 border-1 px-6 lg:mx-48">
-    </section>
+    </section> -->
     <!--  -->
 
-    <section>
+    <!-- <section>
         <div class="lg:px-6 px-8 container mx-auto  lg:my-24 my-12 xl:px-36">
             <h1 class="font-bold text-xl my-3">BIG Practices</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta pariatur eligendi labore quam aspernatur
@@ -239,10 +243,10 @@
             </ul>
         </div>
         <hr class="bg-blue-900 border-1 px-6 lg:mx-48">
-    </section>
+    </section> -->
 
     <!--  -->
-    <section>
+    <!-- <section>
         <div class="lg:px-6 px-8 container mx-auto my-24 xl:px-36">
             <h1 class="font-bold text-xl my-3">BIG Projects-</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempora culpa velit placeat optio
@@ -261,11 +265,11 @@
             </ul>
         </div>
 
-    </section>
+    </section> -->
 
     <!-- footer -->
     <div>
-        <footer class="bg-white shadow-xl" aria-labelledby="footer-heading">
+        <footer class="bg-white shadow-xl font-serif" aria-labelledby="footer-heading">
             <hr class="bg-blue-900 border-2">
             <h2 id="footer-heading" class="sr-only"></h2>
             <div class="mx-auto max-w-7xl px-8 pb-8 sm:pt-8">
