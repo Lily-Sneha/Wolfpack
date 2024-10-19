@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-hero {
-    background-color: RGB(238, 182, 72);
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 800 */
+
+.sen-uniquifier {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
