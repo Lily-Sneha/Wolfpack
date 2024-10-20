@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/input.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <div class="w-full text-black  bg-white drop-shadow-md sen-uniquifier">
+        <div x-data="{ open: false }"
+            class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+
+            <div class="flex flex-row items-center justify-between">
+
+                <a href="./index.html"><img src="./image/logo/logo-1.png" alt="logo" class="h-full w-20"></a>
+
+
+                <button aria-label="hamberger-btn" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+                    @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-red-600">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <nav :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="./index.html">Home</a>
+
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="./aboutUs.html">About Us</a>
+
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="./ourwork.html">Our Work</a>
+
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="./pif.html">PIF</a>
+
+
+
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">Projects</a>
+            </nav>
+        </div>
+    </div>
+    <!-- ******* -->
+
+    <!-- projects and clients -->
+    <section>
+
+        <div class="sen-uniquifier px-6 py-12 back-color text-gray-800  lg:text-left">
+
+            <div class="container mx-auto xl:px-48">
+
+                <div class="grid lg:grid-cols-2 gap-4  items-center  mb-2">
+                    <div>
+                        <h1
+                            class="sen-uniquifier max-w-sm mb-4 text-xl font-bold  tracking-normal leading-9  lg:text-3xl  lg:text-start text-center text-color ">
+                            PROJECTS AND CLIENTS
+                        </h1>
+                        <!-- <h1
+                            class="sen-uniquifier max-w-sm mb-4 text-xl font-bold tracking-normal leading-9  lg:text-3xl  lg:text-start text-center text-color">
+
+                            AND
+                        </h1>
+                        <h1
+                            class="sen-uniquifier max-w-sm mb-4 text-xl font-bold tracking-normal leading-9  lg:text-3xl  lg:text-start text-center text-color">
+
+                            CLIENTS</h1> -->
+                    </div>
+
+                    <div class="lg:mt-0">
+
+                        <ul>
+                            <li class="list-disc  sen-uniquifier text-lg pb-1">ASAR- research paper on state of
+                                fundraising with rights based and
+                                environmental non-profits in India</li>
+                            <li class="list-disc sen-uniquifier text-lg pb-1">Breakthrough- donor retention growth by
+                                improving
+                                systems, processes,
+                                and
+                                capacities</li>
+                            <li class="list-disc sen-uniquifier text-lg pb-1">Centre for Catalyzing Change (C3)-
+                                fundraising
+                                strategy
+                                refresh for
+                                growth
+                                and a system change approach</li>
+                            <li class="list-disc sen-uniquifier text-lg pb-1">CMS- to include a 2- coordinated
+                                fundraising
+                                operational systems and
+                                process development for multiple organizations sitting under 1 parent
+                                organization</li>
+                            <li class="list-disc sen-uniquifier text-lg pb-1">Freedom Fund- developing a self-assessment
+                                online tool
+                                for fundraising
+                                improvement</li>
+                            <li class="list-disc sen-uniquifier text-lg pb-1">Floyd Inc.- advisor to Founder for
+                                business
+                                growth,
+                                mentoring core
+                                team</li>
+                            <li class="list-disc sen-uniquifier text-lg pb-1">Head Held High Foundation- networking and
+                                long-term
+                                strategy for
+                                fundraising</li>
+                            <li class="list-disc sen-uniquifier text-lg pb-1">RNB Global University- advisor to the
+                                Founding
+                                family
+                                and Development
+                                team.</li>
+                            <li class="list-disc sen-uniquifier text-lg pb-1">VR Foundation- create a sustainable
+                                fundraising engine
+                                in 2 years</li>
+                            <li class="list-disc sen-uniquifier text-lg pb-1">Vriddha Mitra- Landscaping India
+                                fundraising
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class=" sen-uniquifier">
+
+                    <nav :class="{'flex': open, 'hidden': !open}"
+                        class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-start md:flex-row">
+
+                        <a class="px-4 py-2 mt-2 mx-3 text-lg font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="./career.html">Career</a>
+
+                        <a class="px-4 py-2 mt-2  mx-3 text-lg font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="./Contact.html">Connect with us</a>
+
+
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+
+    <!-- footer -->
+    <div class="border-2 border-gray-300 border-back-color"></div>
+
+    <footer class="bg-white p-4 " aria-labelledby="footer-heading">
+        <div class="sen-uniquifier mx-auto max-w-7xl px-6 pb-4 sm:pt-24 lg:px-16 pt-2 lg:pt-12 text-black">
+            <!-- <div class=""> -->
+            <div class="flex flex-col lg:flex-row justify-between lg:gap-20 gap-8">
+
+                <!-- 1111 -->
+                <div class="mt-2 xl:mt-0 max-w-xl">
+                    <h3 class="text-lg font-semibold leading-6 text-black">Address</h3>
+                    <p class="mt-2 text-baseleading-6 text-black font-family-class">address
+
+                    </p>
+
+                </div>
+
+                <!-- 22222 -->
+                <div class="mt-2 xl:mt-0 text-black">
+                    <h3 class="text-lg font-semibold leading-6 ">Contact Us</h3>
+                    <p class="mt-2 text-baseleading-6 font-family-class"> +91-9999999999, 9999999999</p>
+                    <p class="mt-2 text-baseleading-6 font-family-class">gmail.com</p>
+
+                </div>
+            </div>
+            <!-- </div> -->
+
+
+            <div
+                class=" mt-8 border-t border-gray-300 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-8">
+                <div class="flex justify-center items-center">
+                    <p class="text-center lg:mt-0 mt-0 mb-2   md:order-1 md:mt-0 font-family-class">&copy;
+                        Copyright
+                        Wolfpack
+                        - All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

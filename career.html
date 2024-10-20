@@ -7,6 +7,11 @@
     <link href="/src/input.css" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -14,7 +19,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-    <div class="w-full text-black  bg-white drop-shadow-md sen-uniquifier">
+    <div class="w-full text-black bg-white drop-shadow-md font-family-class">
         <div x-data="{ open: false }"
             class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
 
@@ -35,107 +40,88 @@
                     </svg>
                 </button>
             </div>
-
             <nav :class="{'flex': open, 'hidden': !open}"
                 class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
 
-                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="./index.html">Home</a>
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="index.html">Home</a>
 
-                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="./aboutUs.html">About Us</a>
 
-                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="./ourwork.html">Our Work</a>
 
-                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="./pif.html">PIF</a>
 
 
+                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="./Projects.html">Projects</a>
 
-                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#">Career</a>
-
-
-                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50     md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="./Contact.html">Contact Us</a>
+    
             </nav>
         </div>
     </div>
     <!-- ******* -->
 
     <!-- career -->
-    <section class="bg-slate-100">
+    <div class=" mx-auto p-8  w-4/5 my-16 sen-uniquifier ">
+        <h1 class="lg:text-3xl text-2xl font-bold">Open Position</h1>
+        <div class=" ">
 
-        <div class="font-serif lg:px-8 lg:py-8 text-gray-800 text-center lg:text-left p-4">
+            <ul>
+                <li class="text-lg list-disc">Consulting Partner</li>
+                <li class="text-lg list-disc">Consulting Associate</li>
+                <li class="text-lg list-disc">Fundraising specialist</li>
+                <li class="text-lg list-disc">Researcher</li>
+            </ul>
+        </div>
+    </div>
 
-            <div class="container mx-auto  lg:px-16">
-               
 
-                <h3 class="heading-font-family font-bold text-2xl text-color pt-2 text-start"> Fundraising
-                    Open positions: </h3>
-                <div class="height: max-content flex items-end">
-                    <div class=" flex items-center">
 
-                        <ul>
-                            <li class="list-disc text-lg pb-1">Consulting Partner</li>
-                            <li class="list-disc text-lg pb-1">Consulting Associate</li>
-                            <li class="list-disc text-lg pb-1">Fundraising specialist</li>
-                            <li class="list-disc text-lg pb-1">Researcher
-                            </li>
-                        </ul>
-                    </div>
+    <!-- footer -->
+    <div class="border-2 border-gray-300 border-back-color"></div>
+
+    <footer class="bg-white p-4 " aria-labelledby="footer-heading">
+        <div class="sen-uniquifier mx-auto max-w-7xl px-6 pb-4 sm:pt-24 lg:px-16 pt-2 lg:pt-12 text-black">
+            <!-- <div class=""> -->
+            <div class="flex flex-col lg:flex-row justify-between lg:gap-20 gap-8">
+
+                <!-- 1111 -->
+                <div class="mt-2 xl:mt-0 max-w-xl">
+                    <h3 class="text-lg font-semibold leading-6 text-black">Address</h3>
+                    <p class="mt-2 text-baseleading-6 text-black font-family-class">address
+
+                    </p>
+
                 </div>
+
+                <!-- 22222 -->
+                <div class="mt-2 xl:mt-0 text-black">
+                    <h3 class="text-lg font-semibold leading-6 ">Contact Us</h3>
+                    <p class="mt-2 text-baseleading-6 font-family-class"> +91-9999999999, 9999999999</p>
+                    <p class="mt-2 text-baseleading-6 font-family-class">gmail.com</p>
+
+                </div>
+            </div>
+            <!-- </div> -->
+
+
+            <div
+                class=" mt-8 border-t border-gray-300 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-8">
+                <div class="flex justify-center items-center">
+                    <p class="text-center lg:mt-0 mt-0 mb-2   md:order-1 md:mt-0 font-family-class">&copy;
+                        Copyright
+                        Wolfpack
+                        - All rights reserved.</p>
+                </div>
+
             </div>
         </div>
-    </section>
-
-
-<!--  
-    <div>
-        <footer class="bg-white shadow-xl " aria-labelledby="footer-heading">
-            <hr class="bg-blue-900 border-2">
-            <h2 id="footer-heading" class="sr-only">Footer</h2>
-            <div class="mx-auto max-w-7xl px-8 pb-8 sm:pt-8 fixed bottom-0 min-h-screen">
-                <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-                    <div class="grid lg:grid-cols-2 gap-8 xl:col-span-2">
-                       
-                    </div>
-                    <div class="mt-10 xl:mt-0">
-                        <p class="mt-2 text-sm leading-6 text-black">
-                            9999999999 | 98711 92983</p>
-                        <p class="mt-2 text-sm leading-6 text-black">
-                            <a href="mailto:tyciafoundation@gmail.com?subject=supporting tycia">Wolfpack@gmail.com</a>
-                        </p>
-                        <p class="mt-2 text-sm leading-6 text-black">N-33, 2nd Floor, Greenpark Extension,New
-                            Delhi-110016</p>
-
-                    </div>
-                </div>
-
-                <div class="mt-8 border-t border-white/10 pt-2 sm:mt-8 md:flex md:items-center md:justify-between">
-                    <div class="flex space-x-6 md:order-2">
-
-                    </div>
-                    <p class="mt-8 text-xs leading-5 text-black md:order-1 md:mt-0">&copy; 2023 Your Company, Inc.
-                        All rights
-                        reserved.</p>
-
-                </div>
-
-                <p class="mt-8 text-xs leading-5  md:order-1 md:mt-0 text-black">
-                    Built with ❤️ by
-
-                    <a href="https://aikyamfellows.org/" class="text-black hover:text-red-500 hover:underline"
-                        target="_blank">
-                        Lily </a>
-                    using
-                    <a href="https://github.com/t4glabs/tyciafoundation"
-                        class="text-black hover:text-red-500 hover:underline" target="_blank">Github Pages</a>
-                    Tailwind
-                </p>
-            </div>
-    </div> -->
+    </footer>
 </body>
 
 </html>
