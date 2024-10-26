@@ -21,55 +21,59 @@
 
     <div class="w-full text-black bg-white drop-shadow-md font-family-class">
         <div x-data="{ open: false }"
-            class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-
-            <div class="flex flex-row items-center justify-between">
-
-                <a href="./index.html"><img src="./image/updated-icon-2.png" alt="logo" class="h-full w-20"></a>
-
-
-                <button aria-label="hamberger-btn" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
-                    @click="open = !open">
-                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-black">
-                        <path x-show="!open" fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                        <path x-show="open" fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
-            <nav :class="{'flex': open, 'hidden': !open}"
-                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-
-                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="index.html">Home</a>
-                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="./aboutUs.html">About Us</a>
-
-                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#">Our Work</a>
-
-                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="./partner.html">Partners</a>
-
-                <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="./Projects.html">Projects</a>
-
-
-            </nav>
+          class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+    
+          <div class="flex flex-row items-center justify-between">
+    
+            <a href="./index.html"><img src="./image/logo.jpg" alt="logo" class="h-full w-20"></a>
+    
+    
+            <button aria-label="hamberger-btn" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+              @click="open = !open">
+              <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-black">
+                <path x-show="!open" fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+                <path x-show="open" fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+    
+    
+          <nav :class="{'flex': open, 'hidden': !open}"
+            class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+            <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              href="./index.html"> A Social Enterprise</a>
+    
+    
+            <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              href="./aboutUs.html">Problems We Solve</a>
+    
+            <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              href="./ourwork.html">Mission Oriented Service</a>
+    
+            <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              href="./partner.html">Stakeholders</a>
+    
+    
+              <a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-neutral-100 hover:bg-black focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              href="./Projects.html">Consulting Projects</a>
+    
+           
+          </nav>
         </div>
-    </div>
+      </div>
     <!-- ******* -->
 
     <!-- mission, vision and goal -->
-    <div class="sen-uniquifier mx-auto p-8 text-center border-2 border-gray-300 w-4/5 my-16">
-        <div class="grid  lg:grid-cols-3 lg:gap-8  gap-14">
+    <!-- <div class="sen-uniquifier mx-auto p-8 text-center border-2 border-gray-300 w-4/5 my-16">
+        <div class="grid  lg:grid-cols-3 lg:gap-8  gap-14"> -->
 
 
             <!-- goal -->
-            <div class="shadow-lg">
+            <!-- <div class="shadow-lg">
                 <h2 class="text-center font-semibold text-xl">Goal</h2>
                 <div class="bg-white p-4 ">
                     <img src="./image/misssion.jpg" alt="" class="mx-auto h-28" />
@@ -78,10 +82,10 @@
                     fundraising by anchoring institutional collaborative projects; and non-profit and
                     development fundraising growth.</p>
 
-            </div>
+            </div> -->
 
             <!-- vision -->
-            <div class="shadow-lg">
+            <!-- <div class="shadow-lg">
                 <h2 class="text-center font-semibold text-xl">Vision</h2>
                 <div class="bg-white p-4 ">
                     <img src="./image/vision.jpg" alt="" class="mx-auto h-32" />
@@ -90,10 +94,10 @@
                     and
                     services that
                     are designed for greater public good.</p>
-            </div>
+            </div> -->
 
             <!-- mission -->
-            <div class="shadow-lg">
+            <!-- <div class="shadow-lg">
                 <h2 class="text-center font-semibold text-xl">Mission</h2>
                 <div class="bg-white p-4 ">
                     <img src="./image/misssion.jpg" alt="" class="mx-auto max-h-28" />
@@ -110,63 +114,63 @@
             </div>
 
         </div>
-    </div> 
-    <!--  end -->
+    </div>  -->
+ <div>   
+    <div class="h-24">
+        <img src="./image/updated images/5-our work- top of page- ribbon-2093714.jpg" alt="Image" class="h-full w-full object-cover">
+      </div>
     <div class="py-4 lg:py-12">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 my-4">
-          <div class="mx-auto max-w-2xl">
-            <h1 class="text-center text-black font-bold lg:text-4xl text-2xl lg:py-8">
-              Our Work
-            </h1>
-          </div>
+            <div class="mx-auto max-w-2xl">
+                <h1 class="text-center text-black font-bold lg:text-4xl text-2xl lg:py-8">
+                Our Work
+                </h1>
+            </div>
       
-          <ul role="list"
-    class="sen-uniquifier text-lg mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-16 gap-y-16 sm:grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2 text-center">
-  
-  <!-- 1st card -->
-  <li class="flex justify-center bg-white flex-col p-4 rounded-lg lg:mx-10">
-    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">
-      Goals
-    </h1>
-    <p class="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-1.8xl lg:text-1.8xl p-2 text-center">
-      Fundraising ecosystem improvement; advancement of non-profit
-      fundraising by anchoring institutional collaborative projects; and non-profit and
-      development fundraising growth.
-    </p>
-  </li>
+            <ul role="list"class="sen-uniquifier text-lg mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-16 gap-y-16 sm:grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2 text-center">
+            <!-- 1st card -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg lg:mx-10">
+                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">
+                    Goals
+                    </h1>
+                    <p class="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-1.8xl lg:text-1.8xl p-2 text-center">
+                    Fundraising ecosystem improvement; advancement of non-profit
+                    fundraising by anchoring institutional collaborative projects; and non-profit and
+                    development fundraising growth.
+                    </p>
+                </li>
 
-  <!-- 2nd card -->
-  <li class="flex justify-center bg-white flex-col p-4 rounded-lg lg:mx-10">
-    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">
-      Vision
-    </h1>
-    <p class="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-1.8xl lg:text-1.8xl p-2 text-center">
-      Make people love, admire, respect, and pay for non-profit actions and
-      services that are designed for greater public good.
-    </p>
-  </li>
+                <!-- 2nd card -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg lg:mx-10">
+                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2">
+                    Vision
+                    </h1>
+                    <p class="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-1.8xl lg:text-1.8xl p-2 text-center">
+                    Make people love, admire, respect, and pay for non-profit actions and
+                    services that are designed for greater public good.
+                    </p>
+                </li>
 
-  <!-- 3rd card centered below -->
-  <li class="flex justify-center bg-white flex-col p-4 rounded-lg lg:mx-auto lg:col-span-2 lg:max-w-2xl">
-    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2 text-center">
-      Mission
-    </h1>
-    <div class="flex justify-center">
-      <p class="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-1.8xl lg:text-1.8xl p-2 text-center">
-        Become the fundraising engine for fifty charities in India in the next 5 years.
-        Provide access to reliable and valuable fundraising data to the sector.
-        Produce fifty high-value fundraisers for the sector in the next 5 years.
-        Create a credible national platform for non-profits to lean and teach fundraising to each other.
-        Launch an association of non-profits advancing common causes to policy makers.
-      </p>
-    </div>
-  </li>
-</ul>
-
+                <!-- 3rd card centered below -->
+                <li class="flex justify-center bg-white flex-col p-4 rounded-lg lg:mx-auto lg:col-span-2 lg:max-w-2xl">
+                    <h1 class="text-xl font-semibold text-gray-800 capitalize lg:text-xl p-2 text-center">
+                    Mission
+                    </h1>
+                    <div class="flex justify-center">
+                    <p class="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-1.8xl lg:text-1.8xl p-2 text-center">
+                        Become the fundraising engine for fifty charities in India in the next 5 years.
+                        Provide access to reliable and valuable fundraising data to the sector.
+                        Produce fifty high-value fundraisers for the sector in the next 5 years.
+                        Create a credible national platform for non-profits to lean and teach fundraising to each other.
+                        Launch an association of non-profits advancing common causes to policy makers.
+                    </p>
+                    </div>
+                </li>
+            </ul>
         </div>
       </div>
       
-
+<!--  end -->
     <!-- service -->
     <section>
 
@@ -273,6 +277,10 @@
             </div>
         </div>
     </section>
+    <div class="h-24">
+        <img src="./image/updated images/6-our work-bottom of page- ribbon-260831.jpg" alt="Image" class="h-full w-full object-cover">
+      </div>
+</div>
     <!--  -->
 
     <!-- footer -->
